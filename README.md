@@ -85,8 +85,15 @@ live site is a short follow-on step.
 
 ## License
 
-Use these in your own business freely. Don't resell the agents themselves as your
-own product. (See LICENSE.)
+Proprietary — see [LICENSE](LICENSE) for the full terms. In short:
+
+- ✅ **Use them** in your own business and in work you do for your clients.
+- ✅ **Sell the output** you create with them (e.g. posts you write for clients).
+- ❌ **Don't resell or redistribute the agents themselves** as your own product,
+  template, or library.
+- ⚠️ **Provided "as is," with no warranty.** You're responsible for reviewing any
+  AI output before you publish or rely on it. The author isn't liable for how the
+  agents are used. (This isn't legal advice; your own program's terms still apply.)
 
 ---
 
