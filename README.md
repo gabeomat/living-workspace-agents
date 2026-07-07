@@ -18,6 +18,7 @@ and does the repeatable work with you instead of waiting on you.
 | Agent | What it does |
 |-------|--------------|
 | **blog-engine** | Writes a search-optimized blog post in *your* voice, end to end: keyword research → draft → verified non-competing source links → an FAQ-schema'd, AI-search-ready post. It learns your business from your own workspace, so the post sounds like you, not like a template. |
+| **social-media-manager** | Turns one piece of long-form content (a transcript, video, or post) into a full week of on-brand social posts — written in *your* voice, rendered as branded image cards + a Reel, and scheduled as drafts. On first run it builds your **Social Design System** from example images you upload; after that every week is automatic. It stops for your approval before it builds anything. |
 
 More agents coming. Each one is self-contained and user-agnostic — it adapts to
 whoever installs it.
@@ -58,6 +59,14 @@ from context), but you can make it sharper by creating a **profile**. Copy
 and save it. The agent loads it automatically. See the fictional
 `example-fictional-coach.md` for a filled-in example.
 
+For the social-media-manager: the first time you run it, it walks you through a quick
+**design onboarding** — you show it a few example images of the look you want, and it
+builds your **Social Design System profile** (your colors, fonts, layouts, weekly post
+mix, and scheduler). After that, every run reads that profile and just goes. You can also
+set it up by hand: copy `social-media-manager/references/profiles/_TEMPLATE.md` to
+`references/profiles/<your-business>.md` and fill it in. It's sharpest when you also have
+a **brand-voice skill** so captions sound like you.
+
 ---
 
 ## What you'll need
@@ -70,6 +79,14 @@ and save it. The agent loads it automatically. See the fictional
   yourself. Image generation never blocks the writing.
 - Everything else (keyword research, writing, link-checking) runs with no extra
   tools or accounts.
+- For the **social-media-manager**: to render the branded image cards and Reel video,
+  it uses **Playwright** and **ffmpeg**. In Claude Code or the desktop app it installs
+  these for you automatically the first time — you just approve when asked, no setup on
+  your end. (Only if your environment blocks installs — a locked-down work laptop, or a
+  plain chat with no code execution — will it hand you the HTML to render elsewhere
+  instead.) To auto-schedule, it uses a connector like **Metricool** (its default); with
+  no connector it hands you a ready-to-post schedule. A **brand-voice skill** is
+  recommended so captions sound like you (it works without one, but the copy is more generic).
 
 ---
 
