@@ -19,6 +19,7 @@ and does the repeatable work with you instead of waiting on you.
 |-------|--------------|
 | **blog-engine** | Writes a search-optimized blog post in *your* voice, end to end: keyword research → draft → verified non-competing source links → an FAQ-schema'd, AI-search-ready post. It learns your business from your own workspace, so the post sounds like you, not like a template. |
 | **social-media-manager** | Turns one piece of long-form content (a transcript, video, or post) into a full week of on-brand social posts — written in *your* voice, rendered as branded image cards + a Reel, and scheduled as drafts. On first run it builds your **Social Design System** from example images you upload; after that every week is automatic. It stops for your approval before it builds anything. |
+| **youtube-content-team** | Runs your whole YouTube pipeline in one pass: mines trending topics in your niche → picks the best video idea for your business → writes the filmable script in *your* voice → designs two branded thumbnails **with your face in them**. On first run it collects a few of your headshots and your thumbnail-brand look; after that every video is one command. Works out of the box (trend research via web search) and upgrades to a real YouTube-API feed if you set one up. |
 
 More agents coming. Each one is self-contained and user-agnostic — it adapts to
 whoever installs it.
@@ -66,6 +67,15 @@ mix, and scheduler). After that, every run reads that profile and just goes. You
 set it up by hand: copy `social-media-manager/references/profiles/_TEMPLATE.md` to
 `references/profiles/<your-business>.md` and fill it in. It's sharpest when you also have
 a **brand-voice skill** so captions sound like you.
+
+For the youtube-content-team: the first time you run it, it walks you through a quick
+**thumbnail onboarding** — you drop 2–4 of your own headshots into `assets/headshots/`
+(varied expressions) and tell it your thumbnail-brand look. It saves that as your YouTube
+profile, and after that every video is one command: it researches trends, picks the idea,
+writes the script in your voice, and makes two thumbnails with your face. Trend research
+works out of the box via web search; if you set up a YouTube Data API feed it'll use that
+instead. Thumbnails auto-generate when `gpt-image-2` is available (see below) — otherwise
+it hands you the two finished prompts to paste into ChatGPT yourself.
 
 ---
 
