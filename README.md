@@ -20,6 +20,7 @@ and does the repeatable work with you instead of waiting on you.
 | **blog-engine** | Writes a search-optimized blog post in *your* voice, end to end: keyword research → draft → verified non-competing source links → an FAQ-schema'd, AI-search-ready post. It learns your business from your own workspace, so the post sounds like you, not like a template. |
 | **social-media-manager** | Turns one piece of long-form content (a transcript, video, or post) into a full week of on-brand social posts — written in *your* voice, rendered as branded image cards + a Reel, and scheduled as drafts. On first run it builds your **Social Design System** from example images you upload; after that every week is automatic. It stops for your approval before it builds anything. |
 | **youtube-content-team** | Runs your whole YouTube pipeline in one pass: mines trending topics in your niche → picks the best video idea for your business → writes the filmable script in *your* voice → designs two branded thumbnails **with your face in them**. On first run it collects a few of your headshots and your thumbnail-brand look; after that every video is one command. Works out of the box (trend research via web search) and upgrades to a real YouTube-API feed if you set one up. |
+| **money-manager** | Your AI bookkeeper *and* financial advisor. Connects to your financial data (Era, QuickBooks, or any trusted MCP), keeps a clean set of books, and shows you a **branded profit-and-loss dashboard** — revenue, expenses, margin, month over month. It flags unusual spend, narrowing margins, and recurring subscriptions worth cutting, and advises where your money should go. On first run it figures out where you're starting from (existing books to reconcile, messy data to organize, or from scratch) and sets you up. It analyzes and recommends — it **never moves money, cancels anything, or files taxes.** |
 
 More agents coming. Each one is self-contained and user-agnostic — it adapts to
 whoever installs it.
@@ -76,6 +77,17 @@ writes the script in your voice, and makes two thumbnails with your face. Trend 
 works out of the box via web search; if you set up a YouTube Data API feed it'll use that
 instead. Thumbnails auto-generate when `gpt-image-2` is available (see below) — otherwise
 it hands you the two finished prompts to paste into ChatGPT yourself.
+
+For the money-manager: the first time you run it, it runs a quick **intake** to find out
+where you're starting from — you have a bookkeeper and clean books (it reconciles and
+continues your structure), you have messy data (it organizes it), or you're starting from
+scratch (it builds your books). It keeps a clean bookkeeping spreadsheet as the source of
+truth and reads your financial data from a connected source — **Era** (recommended),
+**QuickBooks**, or any trusted financial MCP you connect to Claude. That connection is the
+one real requirement for automatic books; without it, it works from a CSV export or figures
+you provide. Then it shows you a branded P&L dashboard and, when you ask, digs into your
+spend. It **never moves money or cancels anything** — it tells you what it sees and what it
+would do; you decide.
 
 ---
 
