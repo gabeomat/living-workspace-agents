@@ -21,6 +21,7 @@ and does the repeatable work with you instead of waiting on you.
 | **social-media-manager** | Turns one piece of long-form content (a transcript, video, or post) into a full week of on-brand social posts — written in *your* voice, rendered as branded image cards + a Reel, and scheduled as drafts. On first run it builds your **Social Design System** from example images you upload; after that every week is automatic. It stops for your approval before it builds anything. |
 | **youtube-content-team** | Runs your whole YouTube pipeline in one pass: mines trending topics in your niche → picks the best video idea for your business → writes the filmable script in *your* voice → designs two branded thumbnails **with your face in them**. On first run it collects a few of your headshots and your thumbnail-brand look; after that every video is one command. Works out of the box (trend research via web search) and upgrades to a real YouTube-API feed if you set one up. |
 | **money-manager** | Your AI bookkeeper *and* financial advisor. Connects to your financial data (Era, QuickBooks, or any trusted MCP), keeps a clean set of books, and shows you a **branded profit-and-loss dashboard** — revenue, expenses, margin, month over month. It flags unusual spend, narrowing margins, and recurring subscriptions worth cutting, and advises where your money should go. On first run it figures out where you're starting from (existing books to reconcile, messy data to organize, or from scratch) and sets you up. It analyzes and recommends — it **never moves money, cancels anything, or files taxes.** |
+| **landing-page-builder** | Builds one production-grade **landing page** in *your* brand and voice — sales page, opt-in, workshop registration, waitlist — then does what most tools skip: it **renders the page in a real browser, critiques its own screenshots** like a hostile design director (widows, weak contrast, dead zones, anything that smells like an AI default), and rebuilds across three passes before handing you a live preview. Copy is written to convert using real direct-response craft and buyer psychology, routed through your brand-voice skill when you have one — persuasive, never hard-sell. On first run it learns your business and saves your profile; after that every page just reads it. |
 | **lead-manager** | The follow-up team you never had. Mines the warm people **already in your world** — your email list, community, event attendees, past clients — into one **Lead Ledger**, scores who's warmest (rules, not vibes), and hands you a small weekly batch of personal outreach drafts in *your* voice, each referencing what that person actually said. You approve and send — **it never sends anything itself.** On first run it interviews you (your pools, your offers, your rhythm) and builds the ledger; after that it's a 15-minute weekly ritual that turns an audience you already paid to attract into conversations. |
 
 More agents coming. Each one is self-contained and user-agnostic — it adapts to
@@ -89,6 +90,18 @@ one real requirement for automatic books; without it, it works from a CSV export
 you provide. Then it shows you a branded P&L dashboard and, when you ask, digs into your
 spend. It **never moves money or cancels anything** — it tells you what it sees and what it
 would do; you decide.
+
+For the landing-page-builder: the first time you run it, a quick **setup** pulls your brand,
+voice, audience, and offer from your workspace (and asks only for what it can't find), then
+saves your profile — after that every page just reads it. Each page starts from a real
+art-directed brief (concept, palette, type, one signature technique) so it never defaults to
+a generic template, and the copy runs on direct-response structure routed through your
+**brand-voice skill** when you have one. To run its screenshot-critique loop it uses
+**Playwright** (headless Chrome), which installs automatically the first time in Claude Code /
+the desktop app — you just approve. Only a locked-down, no-code environment can't render;
+then it builds carefully and tells you the pixel-review passes couldn't run there. It builds
+**one page at a time** and hands you a live preview to ship on your say-so — it doesn't
+auto-publish.
 
 For the lead-manager: the first time you run it, a quick **onboarding interview** maps where
 your people already live (email list, community, events, past clients — one pool is enough to
