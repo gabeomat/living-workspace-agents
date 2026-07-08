@@ -70,7 +70,7 @@ Then create the `leads/` workspace structure (see `references/ledger-spec.md`), 
 ### Mode 3 — The weekly batch (the core ritual)
 1. Read the ledger. Take the top [[Batch Size]] *eligible* people: not contacted within the cooldown, not `not_interested`, and holding at least one real signal.
 2. For each, write or refresh a short **dossier** in `leads/dossiers/` — who they are, every signal with date and context, which ask-path they route to.
-3. Draft one personal message per person **in the user's voice** (through their brand-voice skill if installed), following `references/outreach-rules.md`: reference their real signal, offer something useful, end with the routed ask. Match the channel to where the relationship lives.
+3. Draft one personal message per person **in the user's voice** (through their brand-voice skill if installed), following `references/outreach-rules.md`: reference their real signal, offer something useful, end with the routed ask. Match the channel to where the relationship lives. Drafting runs on a **mid-tier model** (Sonnet-class) — voice quality matters here and the volume is small (~10 short messages); never spawn a frontier-tier subagent for it, and never draft with a bottom-tier model (bot-smelling copy fails the whole system).
 4. Write the batch to `leads/outreach/YYYY-MM-DD-batch.md`: per person — who, why now (the signal), the channel, the draft, and a send link/address. **Then STOP.** Present it for approval. Never send anything.
 5. When the user says which ones they sent, update `last_touch` and `status` in the ledger. If they edit a draft before sending, note what they changed — that's voice-tuning data for next week.
 6. If fewer than [[Batch Size]] people qualify, deliver the smaller honest batch and say why — never pad with cold names dressed up as warm.
@@ -90,8 +90,19 @@ No inline example needed — the ledger, dossiers, and drafts generate from the 
 ## (A) Action
 
 - **Output:** A maintained `leads/ledger.csv` (source of truth) + `leads/dossiers/*.md` for the warmest people + a dated approval batch in `leads/outreach/` + a pipeline report on request.
+- **Model routing (the token-discipline spec — follow this, it's why the system stays cheap):**
+
+  | Stage | Runs on | Why |
+  |-------|---------|-----|
+  | Mode 1 — extraction | **Cheapest capable model** (Haiku-class) as subagents, via the Agent/Task tool's model option | High-volume mechanical reading; a small model extracts names and quotes just fine |
+  | Mode 2 — scoring & dedupe | **`scripts/score_leads.py` — no model at all** | Deterministic arithmetic; zero tokens, auditable, repeatable |
+  | Mode 2 — cut-line tie-break (optional) | Cheapest capable model | A handful of short verbatim signals, yes/no judgment |
+  | Mode 3 — outreach drafting | **Mid-tier model** (Sonnet-class) as a subagent | Voice quality matters; volume is tiny (~10 short messages) |
+  | Orchestration, batch review, strategy | The main session (whatever the user runs) | The only place frontier-level judgment earns its cost |
+
+  Model names are tier examples, not requirements — use whatever the environment offers at each tier. If the environment can't spawn subagents or pick models, run stages inline in the main session, keep batches small, and say so. The non-negotiables regardless of environment: **scoring is always the script, and raw sources are never read twice** (`processed.log`).
 - **Tools / dependencies:**
-  - **Subagents (Task/Agent tool), cheapest model available** — trigger in Mode 1 for extraction. Fallback: extract inline.
+  - **Subagents (Task/Agent tool) with per-stage model selection** — trigger in Modes 1 and 3, tiers per the model-routing table above. Fallback: run inline.
   - **`scripts/score_leads.py`** — trigger in Mode 2 and before every batch. Scoring is code, not tokens.
   - **Brand-voice skill** — trigger in Mode 3 if installed; otherwise draft from voice notes in the profile + samples in the Brain.
   - **Scheduled tasks** — offer during onboarding for the weekly run; degrade to a manual weekly command.
@@ -104,7 +115,7 @@ No inline example needed — the ledger, dossiers, and drafts generate from the 
 2. **Respect rules held:** no surveillance-flavored references, signal quotes within the recency cap, no one past their nudge limit, no `not_interested` contacted, no Premium ask to a cold contact. (Per `outreach-rules.md`.)
 3. **Voice check:** drafts sound like the user, not like software. If a brand-voice skill exists, it was used.
 4. **Format check:** batch file has who / why now / channel / draft / send link for every entry; ledger updated only after the user confirms sends.
-5. **Cost discipline held:** no raw source file read twice (`processed.log` honored); extraction ran on a cheap model; scoring ran as code.
+5. **Cost discipline held:** no raw source file read twice (`processed.log` honored); every stage ran on its assigned tier from the model-routing table (extraction cheap, scoring as code, drafting mid-tier, frontier only orchestrating).
 6. **Honesty check:** batch size reflects reality; sparse-signal people were left in nurture, not dressed up as warm.
 
 ---
