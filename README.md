@@ -21,6 +21,7 @@ and does the repeatable work with you instead of waiting on you.
 | **social-media-manager** | Turns one piece of long-form content (a transcript, video, or post) into a full week of on-brand social posts — written in *your* voice, rendered as branded image cards + a Reel, and scheduled as drafts. On first run it builds your **Social Design System** from example images you upload; after that every week is automatic. It stops for your approval before it builds anything. |
 | **youtube-content-team** | Runs your whole YouTube pipeline in one pass: mines trending topics in your niche → picks the best video idea for your business → writes the filmable script in *your* voice → designs two branded thumbnails **with your face in them**. On first run it collects a few of your headshots and your thumbnail-brand look; after that every video is one command. Works out of the box (trend research via web search) and upgrades to a real YouTube-API feed if you set one up. |
 | **money-manager** | Your AI bookkeeper *and* financial advisor. Connects to your financial data (Era, QuickBooks, or any trusted MCP), keeps a clean set of books, and shows you a **branded profit-and-loss dashboard** — revenue, expenses, margin, month over month. It flags unusual spend, narrowing margins, and recurring subscriptions worth cutting, and advises where your money should go. On first run it figures out where you're starting from (existing books to reconcile, messy data to organize, or from scratch) and sets you up. It analyzes and recommends — it **never moves money, cancels anything, or files taxes.** |
+| **lead-manager** | The follow-up team you never had. Mines the warm people **already in your world** — your email list, community, event attendees, past clients — into one **Lead Ledger**, scores who's warmest (rules, not vibes), and hands you a small weekly batch of personal outreach drafts in *your* voice, each referencing what that person actually said. You approve and send — **it never sends anything itself.** On first run it interviews you (your pools, your offers, your rhythm) and builds the ledger; after that it's a 15-minute weekly ritual that turns an audience you already paid to attract into conversations. |
 
 More agents coming. Each one is self-contained and user-agnostic — it adapts to
 whoever installs it.
@@ -88,6 +89,17 @@ one real requirement for automatic books; without it, it works from a CSV export
 you provide. Then it shows you a branded P&L dashboard and, when you ask, digs into your
 spend. It **never moves money or cancels anything** — it tells you what it sees and what it
 would do; you decide.
+
+For the lead-manager: the first time you run it, a quick **onboarding interview** maps where
+your people already live (email list, community, events, past clients — one pool is enough to
+start), your offers (an entry offer for cold people, your core offer, a premium offer reserved
+for warm people), and your weekly rhythm — then it builds your **Lead Ledger**. After that:
+drop any export into `leads/inbox/` and say "feed the ledger." Extraction happens once per
+file on a lightweight model, scoring runs as a plain script (no AI guessing, no token cost),
+and each week you get a small batch of personal drafts in your voice, each tied to something
+that person actually said. No connector required — everything works from exports you can
+already download. It drafts; **you** send. A **brand-voice skill** is recommended so the
+messages sound like you.
 
 ---
 
