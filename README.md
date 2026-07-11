@@ -23,6 +23,7 @@ and does the repeatable work with you instead of waiting on you.
 | **money-manager** | Your AI bookkeeper *and* financial advisor. Connects to your financial data (Era, QuickBooks, or any trusted MCP), keeps a clean set of books, and shows you a **branded profit-and-loss dashboard** — revenue, expenses, margin, month over month. It flags unusual spend, narrowing margins, and recurring subscriptions worth cutting, and advises where your money should go. On first run it figures out where you're starting from (existing books to reconcile, messy data to organize, or from scratch) and sets you up. It analyzes and recommends — it **never moves money, cancels anything, or files taxes.** |
 | **landing-page-builder** | Builds one production-grade **landing page** in *your* brand and voice — sales page, opt-in, workshop registration, waitlist — then does what most tools skip: it **renders the page in a real browser, critiques its own screenshots** like a hostile design director (widows, weak contrast, dead zones, anything that smells like an AI default), and rebuilds across three passes before handing you a live preview. Copy is written to convert using real direct-response craft and buyer psychology, routed through your brand-voice skill when you have one — persuasive, never hard-sell. On first run it learns your business and saves your profile; after that every page just reads it. |
 | **lead-manager** | The follow-up team you never had. Mines the warm people **already in your world** — your email list, community, event attendees, past clients — into one **Lead Ledger**, scores who's warmest (rules, not vibes), and hands you a small weekly batch of personal outreach drafts in *your* voice, each referencing what that person actually said. You approve and send — **it never sends anything itself.** On first run it interviews you (your pools, your offers, your rhythm) and builds the ledger; after that it's a 15-minute weekly ritual that turns an audience you already paid to attract into conversations. |
+| **sales-call-copilot** | Your AI sales team working every call you take. Feed it a call transcript and you get a structured **debrief**, an honest **coaching scorecard** (seven fixed dimensions, every score citing the transcript, one thing to fix next call), and the **follow-up email drafted in *your* voice within the hour**. Before your next call it hands you a one-page **brief** from the deal's own history so you never walk in cold; when a call earns it, it drafts the **proposal from the prospect's own recorded words** with your real pricing. A living pipeline tracks **who's waiting on what** — and as calls stack up, so does the coaching: objection playbook, buyer-language swipe file, cross-call trends. It works after the call, never during — and **it never sends anything itself.** |
 
 More agents coming. Each one is self-contained and user-agnostic — it adapts to
 whoever installs it.
@@ -113,6 +114,18 @@ and each week you get a small batch of personal drafts in your voice, each tied 
 that person actually said. No connector required — everything works from exports you can
 already download. It drafts; **you** send. A **brand-voice skill** is recommended so the
 messages sound like you.
+
+For the sales-call-copilot: the first time you run it, a quick **onboarding interview** maps
+how you sell — your offers and real prices (proposals only ever quote these), how a deal
+usually goes, your known objections, and how your calls get recorded — then it builds your
+`sales/` pipeline, capturing any deals already in flight. After that: drop a transcript into
+`sales/inbox/` and say "debrief my call." Each transcript is read **once** on a lightweight
+model and distilled into a deal file; every later brief, proposal, and pipeline check reads
+the distillation, which is what keeps it cheap at any volume. Any recorder works (Zoom,
+Fathom, Meet, Otter — export or paste; typed notes too); no connector required. It coaches
+honestly, drafts in your voice (**brand-voice skill** recommended), and never sends anything
+— you approve, you send. Pairs naturally with the lead-manager: closed-lost prospects hand
+across to its ledger for long-term nurture.
 
 ---
 
