@@ -24,6 +24,7 @@ and does the repeatable work with you instead of waiting on you.
 | **landing-page-builder** | Builds one production-grade **landing page** in *your* brand and voice — sales page, opt-in, workshop registration, waitlist — then does what most tools skip: it **renders the page in a real browser, critiques its own screenshots** like a hostile design director (widows, weak contrast, dead zones, anything that smells like an AI default), and rebuilds across three passes before handing you a live preview. Copy is written to convert using real direct-response craft and buyer psychology, routed through your brand-voice skill when you have one — persuasive, never hard-sell. On first run it learns your business and saves your profile; after that every page just reads it. |
 | **lead-manager** | The follow-up team you never had. Mines the warm people **already in your world** — your email list, community, event attendees, past clients — into one **Lead Ledger**, scores who's warmest (rules, not vibes), and hands you a small weekly batch of personal outreach drafts in *your* voice, each referencing what that person actually said. You approve and send — **it never sends anything itself.** On first run it interviews you (your pools, your offers, your rhythm) and builds the ledger; after that it's a 15-minute weekly ritual that turns an audience you already paid to attract into conversations. |
 | **sales-call-copilot** | Your AI sales team working every call you take. Feed it a call transcript and you get a structured **debrief**, an honest **coaching scorecard** (seven fixed dimensions, every score citing the transcript, one thing to fix next call), and the **follow-up email drafted in *your* voice within the hour**. Before your next call it hands you a one-page **brief** from the deal's own history so you never walk in cold; when a call earns it, it drafts the **proposal from the prospect's own recorded words** with your real pricing. A living pipeline tracks **who's waiting on what** — and as calls stack up, so does the coaching: objection playbook, buyer-language swipe file, cross-call trends. It works after the call, never during — and **it never sends anything itself.** |
+| **nurture-sequence-builder** | Your AI email funnel team. Tell it **what kind of funnel you're building** — lead-magnet welcome, webinar/workshop follow-up (attendee / non-buyer / no-show branches), launch, application, re-engagement, post-purchase, or custom — and it designs the **belief journey first** (where your reader is on the awareness ladder × how warm they are), then writes every email to walk it: one job and one CTA per email, in *your* voice, powered by **your real stories** from a story bank it builds with you and grows every run. Nothing is invented — every story, result, and deadline is one you actually gave it. If your email platform is connected it creates the segment and loads the sequence as **drafts**; otherwise you get a paste-ready package with subject-line variants and a timing plan. **It never sends or activates anything** — you flip the switch. |
 
 More agents coming. Each one is self-contained and user-agnostic — it adapts to
 whoever installs it.
@@ -126,6 +127,18 @@ Fathom, Meet, Otter — export or paste; typed notes too); no connector required
 honestly, drafts in your voice (**brand-voice skill** recommended), and never sends anything
 — you approve, you send. Pairs naturally with the lead-manager: closed-lost prospects hand
 across to its ledger for long-term nurture.
+
+For the nurture-sequence-builder: the first time you run it, a quick **onboarding interview**
+captures your offers and real prices, your platform and voice — and then banks your first
+**3–5 real stories**, each tagged by the belief it shifts. After that, any build starts with
+one question: *"what kind of funnel are you building?"* It designs the architecture first
+(awareness stage × temperature decide length, pacing, and what each email must accomplish),
+gets your yes, asks for any fresh stories, then drafts — strategy in the main session, email
+copy on a mid-tier model, subject-line variants on a cheap one. Stories and offers live in
+your files, never in the agent, so new wins and new offers mean fresh sequences from the same
+machine. If your email platform is connected to Claude it loads the sequence as **drafts** and
+builds the segment; otherwise you get a paste-ready package any platform can absorb. It never
+sends — you activate. A **brand-voice skill** is recommended so every email sounds like you.
 
 ---
 
