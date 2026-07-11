@@ -24,6 +24,7 @@ and does the repeatable work with you instead of waiting on you.
 | **landing-page-builder** | Builds one production-grade **landing page** in *your* brand and voice — sales page, opt-in, workshop registration, waitlist — then does what most tools skip: it **renders the page in a real browser, critiques its own screenshots** like a hostile design director (widows, weak contrast, dead zones, anything that smells like an AI default), and rebuilds across three passes before handing you a live preview. Copy is written to convert using real direct-response craft and buyer psychology, routed through your brand-voice skill when you have one — persuasive, never hard-sell. On first run it learns your business and saves your profile; after that every page just reads it. |
 | **lead-manager** | The follow-up team you never had. Mines the warm people **already in your world** — your email list, community, event attendees, past clients — into one **Lead Ledger**, scores who's warmest (rules, not vibes), and hands you a small weekly batch of personal outreach drafts in *your* voice, each referencing what that person actually said. You approve and send — **it never sends anything itself.** On first run it interviews you (your pools, your offers, your rhythm) and builds the ledger; after that it's a 15-minute weekly ritual that turns an audience you already paid to attract into conversations. |
 | **sales-call-copilot** | Your AI sales team working every call you take. Feed it a call transcript and you get a structured **debrief**, an honest **coaching scorecard** (seven fixed dimensions, every score citing the transcript, one thing to fix next call), and the **follow-up email drafted in *your* voice within the hour**. Before your next call it hands you a one-page **brief** from the deal's own history so you never walk in cold; when a call earns it, it drafts the **proposal from the prospect's own recorded words** with your real pricing. A living pipeline tracks **who's waiting on what** — and as calls stack up, so does the coaching: objection playbook, buyer-language swipe file, cross-call trends. It works after the call, never during — and **it never sends anything itself.** |
+| **daily-business-pulse** | Every morning your business talks to you first. One scheduled brief — your 3–5 key numbers with real trends, what came in overnight, today's calendar, your tasks read against your weekly goal, and **The One Thing**: the single highest-leverage move for the day, with a 30-minute first action. Rendered as a clean editorial dashboard you can pin in your sidebar. On first run it interviews you (which numbers, where they live — connector, export, file, or just tell it) and generates Pulse #1 on the spot. Every number carries its source and freshness; it **never invents data**, and it's **read-only** toward your files — it writes only its own briefing and its rolling trend log. |
 | **nurture-sequence-builder** | Your AI email funnel team. Tell it **what kind of funnel you're building** — lead-magnet welcome, webinar/workshop follow-up (attendee / non-buyer / no-show branches), launch, application, re-engagement, post-purchase, or custom — and it designs the **belief journey first** (where your reader is on the awareness ladder × how warm they are), then writes every email to walk it: one job and one CTA per email, in *your* voice, powered by **your real stories** from a story bank it builds with you and grows every run. Nothing is invented — every story, result, and deadline is one you actually gave it. If your email platform is connected it creates the segment and loads the sequence as **drafts**; otherwise you get a paste-ready package with subject-line variants and a timing plan. **It never sends or activates anything** — you flip the switch. |
 
 More agents coming. Each one is self-contained and user-agnostic — it adapts to
@@ -127,6 +128,19 @@ Fathom, Meet, Otter — export or paste; typed notes too); no connector required
 honestly, drafts in your voice (**brand-voice skill** recommended), and never sends anything
 — you approve, you send. Pairs naturally with the lead-manager: closed-lost prospects hand
 across to its ledger for long-term nurture.
+
+For the daily-business-pulse: the first time you run it, a quick **onboarding interview** asks the
+only question that matters — *what 3–5 numbers tell you your business is healthy, and where does
+each live?* Every metric has a working path: a connector it reads live (Stripe, your email
+platform, your community), an export you drop into `pulse/data/`, a file you already keep, or just
+telling it the number when it asks — and it tests each source with one real read before trusting
+it. It maps your task/goal file (or creates a simple one with you), your calendar (Google Calendar
+connector recommended; paste-mode works too), and your brand colors — then generates **Pulse #1
+immediately** and offers to schedule the daily run. From then on, one row per day goes into your
+rolling **pulse log**, which is how trends and sparklines exist even for numbers you type in by
+hand. It's **read-only** toward your files and never invents a number — a broken source is
+reported, not papered over. Pin it as a living artifact in Cowork and it's your standing morning
+view.
 
 For the nurture-sequence-builder: the first time you run it, a quick **onboarding interview**
 captures your offers and real prices, your platform and voice — and then banks your first
