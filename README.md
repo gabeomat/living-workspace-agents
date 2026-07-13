@@ -26,6 +26,7 @@ and does the repeatable work with you instead of waiting on you.
 | **sales-call-copilot** | Your AI sales team working every call you take. Feed it a call transcript and you get a structured **debrief**, an honest **coaching scorecard** (seven fixed dimensions, every score citing the transcript, one thing to fix next call), and the **follow-up email drafted in *your* voice within the hour**. Before your next call it hands you a one-page **brief** from the deal's own history so you never walk in cold; when a call earns it, it drafts the **proposal from the prospect's own recorded words** with your real pricing. A living pipeline tracks **who's waiting on what** — and as calls stack up, so does the coaching: objection playbook, buyer-language swipe file, cross-call trends. It works after the call, never during — and **it never sends anything itself.** |
 | **daily-business-pulse** | Every morning your business talks to you first. One scheduled brief — your 3–5 key numbers with real trends, what came in overnight, today's calendar, your tasks read against your weekly goal, and **The One Thing**: the single highest-leverage move for the day, with a 30-minute first action. Rendered as a clean editorial dashboard you can pin in your sidebar. On first run it interviews you (which numbers, where they live — connector, export, file, or just tell it) and generates Pulse #1 on the spot. Every number carries its source and freshness; it **never invents data**, and it's **read-only** toward your files — it writes only its own briefing and its rolling trend log. |
 | **nurture-sequence-builder** | Your AI email funnel team. Tell it **what kind of funnel you're building** — lead-magnet welcome, webinar/workshop follow-up (attendee / non-buyer / no-show branches), launch, application, re-engagement, post-purchase, or custom — and it designs the **belief journey first** (where your reader is on the awareness ladder × how warm they are), then writes every email to walk it: one job and one CTA per email, in *your* voice, powered by **your real stories** from a story bank it builds with you and grows every run. Nothing is invented — every story, result, and deadline is one you actually gave it. If your email platform is connected it creates the segment and loads the sequence as **drafts**; otherwise you get a paste-ready package with subject-line variants and a timing plan. **It never sends or activates anything** — you flip the switch. |
+| **business-strategist** | The advisor who already read everything. Ask it anything strategic — *"should I raise my price?" "why is revenue flat?" "is this new idea a distraction?"* — and it sends **fast, inexpensive analyst agents** through your whole workspace (numbers, leads, pipeline, clients, goals — each reading only its mapped sources), then turns their evidence into straight, **push-back advice that cites the file every claim came from**. On a cadence (quarterly by default) it runs the **full review**: what changed since last time, where the momentum is, where the leak is, last period's goals scored honestly, next period's plan **capped at 3 priorities**, and the hard questions to sit with. Every review saves a scorecard so the next one has a baseline — it gets smarter every quarter you run it. **Read-only** — it changes nothing, and a domain you don't track becomes a "start tracking this" recommendation, never a guess. |
 
 More agents coming. Each one is self-contained and user-agnostic — it adapts to
 whoever installs it.
@@ -153,6 +154,18 @@ your files, never in the agent, so new wins and new offers mean fresh sequences 
 machine. If your email platform is connected to Claude it loads the sequence as **drafts** and
 builds the segment; otherwise you get a paste-ready package any platform can absorb. It never
 sends — you activate. A **brand-voice skill** is recommended so every email sounds like you.
+
+For the business-strategist: the first time you run it, it **scans your workspace before asking
+you anything** — auto-detecting what's already there (the pulse log, the lead ledger, the sales
+pipeline, the books, any tracker you keep), confirming each source with you, and testing every one
+with a real read before trusting it. That saved **source map** is what its analyst agents read
+from ever after: cheap, parallel, each one confined to its own domain, with the smartest model
+reserved for the judgment on top. No other agent is required — any spreadsheet or notes file
+works, and the more Library agents you run, the more it has to read. It answers everyday strategic
+questions from your real data (with a position, the reasoning, and a citation for every number),
+and on your cadence runs the full review with an honestly-scored goal scorecard that compounds
+quarter over quarter. It's **read-only** — it writes only its own reviews and scorecards, and the
+decisions stay yours.
 
 ---
 
